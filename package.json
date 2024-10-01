@@ -1,0 +1,24 @@
+{
+  "name": "scrapingamazon",
+  "version": "1.0.0",
+  "description": "scraping Amazon or RML wiki not sure yet. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amunizp/testingScrape.git"
+  },
+  "keywords": [
+    "scrape",
+    "amazon",
+    "wiki"
+  ],
+  "author": "Andres in Rock the Code",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/amunizp/testingScrape/issues"
+  },
+  "homepage": "https://github.com/amunizp/testingScrape#readme"
+}

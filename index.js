@@ -54,12 +54,24 @@ const scrapeProducts = async () => {
   // console.log(price.length)
 
   const amazonProduct = title.map((value, index) => {
+    //title.slice(0,5).map((value,index)=>{ para solo coger los 5 primeros!
     return {
       title: title[index],
       price: price[index]
     }
   })
-  console.log(amazonProduct)
+  amazonProduct.map(async (data) => {
+    const dataSchema = new Data(data)
+    try {
+      await dataSchema.save()
+      console.log(`successfully saved ${dataSchema} to data base`)
+    } catch (error) {
+      console.error('Failed to save data ' + error)
+    }
+  })
+
+  await browser.close()
+  console.log('All saved Saved')
 }
 
 scrapeProducts()

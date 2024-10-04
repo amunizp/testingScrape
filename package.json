@@ -4,7 +4,7 @@
   "description": "scraping Amazon or RML wiki not sure yet. ",
   "main": "index.js",
   "scripts": {
-    "test": "npm node index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/amunizp/testingScrape/issues"
   },
-  "homepage": "https://github.com/amunizp/testingScrape#readme"
+  "homepage": "https://github.com/amunizp/testingScrape#readme",
+  "dependencies": {
+    "mongoose": "^8.7.0",
+    "puppeteer": "^23.4.1"
+  }
 }
